@@ -8,4 +8,3 @@ for element in elements:
 
 button = browser.find_element_by_css_selector("button.btn")
 button.click()
-# не забывайте добавлять пустую строку в конце каждого файла в Python
