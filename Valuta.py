@@ -9,7 +9,6 @@ from selenium import webdriver
 browser = webdriver.Chrome()
 link = "http://suninjuly.github.io/explicit_wait2.html"
 browser.get(link)
-
 price = WebDriverWait(browser, 13).until(
         EC.text_to_be_present_in_element((By.ID, "price"),"10000")
     )
@@ -21,6 +20,5 @@ x=x_elem.text
 y = calc(x)
 red= browser.find_element_by_id("answer")
 red.send_keys(y)
-
 button = browser.find_element_by_css_selector("button.btn")
 button.click()
