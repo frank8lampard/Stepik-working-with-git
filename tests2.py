@@ -18,7 +18,6 @@ option1 = browser.find_element_by_id("robotCheckbox")
 option1.click()
 
 button = browser.find_element_by_tag_name("button")
-
 browser.execute_script("return arguments[0].scrollIntoView(true);", button)
 
 option2 = browser.find_element_by_id("robotsRule")
