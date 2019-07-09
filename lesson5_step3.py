@@ -4,7 +4,6 @@ import math
 link = "http://suninjuly.github.io/find_link_text"
 browser = webdriver.Chrome()
 browser.get(link)
-
 link = browser.find_element_by_partial_link_text(str(math.ceil(math.pow(math.pi, math.e)*10000)))
 link.click()
 
